@@ -1,6 +1,6 @@
 var EventEmitter = require('events')
 
-const {print, print_debug, print_error} = require('console-to-server')
+const print = console.log
 
 const SongType = require('./song_types.js')
 

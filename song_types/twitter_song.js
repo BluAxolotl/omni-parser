@@ -1,5 +1,5 @@
 const OmniSong = require('../omni_song.js')
-const {print, print_debug, print_error} = require('console-to-server')
+const print = console.log
 const twitterGetUrl = require("twitter-url-direct")
 var ffprobe = require('ffprobe'),
     ffprobeStatic = require('ffprobe-static');

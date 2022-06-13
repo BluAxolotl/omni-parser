@@ -1,5 +1,5 @@
 const OmniSong = require('../omni_song.js')
-const {print, print_debug} = require('console-to-server')
+const print = console.log
 const ytdl = require('ytdl-core')
 const ytpl = require('ytpl')
 

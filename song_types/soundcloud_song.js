@@ -1,6 +1,6 @@
 const OmniSong = require('../omni_song.js')
 const {Writable} = require('stream')
-const {print, print_debug} = require('console-to-server')
+const print = console.log
 const scdl = require('soundcloud-downloader').default
 const SoundCloud = require("soundcloud-scraper");
 const client = new SoundCloud.Client()

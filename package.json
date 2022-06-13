@@ -1,6 +1,6 @@
 {
   "name": "omni-parser",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,6 @@
     "audio-loader": "^1.0.3",
     "audio-play": "^2.3.1",
     "bandcamp-fetch": "^0.2.2-b.1",
-    "console-to-server": "^1.2.0",
     "events": "^3.3.0",
     "ffprobe": "^1.1.2",
     "ffprobe-static": "^3.0.0",

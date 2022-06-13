@@ -1,5 +1,5 @@
 const OmniSong = require('../omni_song.js')
-const {print, print_debug, print_error} = require('console-to-server')
+const print = console.log
 var {mediaUrlParser} = require('media-url-parser')
 var ffprobe = require('ffprobe'),
     ffprobeStatic = require('ffprobe-static');

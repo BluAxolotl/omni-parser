@@ -1,4 +1,4 @@
-const { print, ConsoleCommand } = require("console-to-server")
+const print = console.log
 
 const { SoundcloudSong, BotbSong, TwitterSong, YouTubeSong } = require('./index.js')
 const OmniUtils = require('./utils.js')
@@ -9,24 +9,11 @@ const client = new Discord.Client();
 const VOICE_CHANNEL = "731021299295584266"
 const CURRENT_LINK = "https://soundcloud.com/plrusek-chan/glass-ost-ronaldos-march"
 
-new ConsoleCommand("load", "Loads up a song", ["song_link"], function (args) {
-	print(args[0])
-	let song = OmniUtils.link_parse(args[0])
-	if (song != null) {
-		if (song.constructed) { print(song) }
-		song.event.on('constructed', function() {
-			print(song)
-		})
-	} else {
-		print("INVALID LINK")
-	}
+let song = new SoundcloudSong("https://soundcloud.com/plrusek-chan/glass-ost-ronaldos-march")
+
+song.event.on('constructed', function() {
+	print(song)
 })
-
-// let song = new SoundcloudSong("https://soundcloud.com/plrusek-chan/glass-ost-ronaldos-march")
-
-// song.event.on('constructed', function() {
-// 	print(song)
-// })
 
 // function play(song, channel_id) {
 
